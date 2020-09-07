@@ -1,0 +1,30 @@
+{
+    "name": "dbyvalin/maxpay-oxid-module",
+    "description": "This is the Maxpay module for the OXID eShop.",
+    "type": "oxideshop-module",
+    "keywords": ["oxid", "modules", "eShop", "Maxpay"],
+    "homepage": "https://maxpay.com",
+    "license": [
+        "GPL-3.0-only",
+        "proprietary"
+    ],
+    "extra": {
+        "oxideshop": {
+            "target-directory": "maxpay"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "maxpay/hpp-client": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Maxpay\\MaxpayModule\\": "../../../source/modules/maxpay"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "prepend-autoloader": false
+    },
+    "version": "1.0.0" 
+}
